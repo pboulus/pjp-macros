@@ -1,2 +1,2 @@
 #PJP macros library
-This repository contains a listing of. Some of it is untidy. Feel free to make changes to these macros.
+A repository of my PowerPoint macros that I have found useful at PJP.
