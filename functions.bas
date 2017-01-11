@@ -1,5 +1,5 @@
 Sub SplitFile()
-
+    #This macro splits PowerPoint files into smaller file of defined slide length.
     Dim lSlidesPerFile As Long
     Dim lTotalSlides As Long
     Dim oSourcePres As Presentation
