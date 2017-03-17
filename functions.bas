@@ -323,3 +323,25 @@ Function toArray(col As Collection)
   Next
   toArray = arr
 End Function
+
+Sub DeleteTextObjects()
+   Dim shp As Shape
+   Dim sld As Slide
+   For Each sld In ActivePresentation.Slides
+   For Each shp In sld.Shapes
+   If Not shp.TextFrame Is Nothing Then
+      On Error GoTo MoveOn: 'Error handler for charts and non-text objects
+      If shp.TextFrame.TextRange.Text = "KWM AU Fact Pack" Then
+      shp.Visible = msoFalse
+      ElseIf shp.TextFrame.TextRange.Text = "KWM" Then
+      shp.Visible = msoFalse
+      End If
+      End If
+MoveOn:
+   Next shp
+   Next sld
+End Sub
+ 
+ 
+ 
+
